@@ -55,5 +55,7 @@ spec:
         set -e
         ls $(workspaces.source.path)
         python -m pip install --upgrade pip wheel
+        echo "Hi"
+        ls $(workspaces.source.path)
         pip install -r requirements.txt
         nosetests $(params.args)
